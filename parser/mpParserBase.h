@@ -149,6 +149,7 @@ MUP_NAMESPACE_START
     // Allow clients to check syntacticaly correctnes of name against character set.
     void  CheckName(const string_type &a_sName, const string_type &a_CharSet) const;
 
+	RPN& GetRPN() { return m_rpn; }
   protected:
 
     fun_maptype  m_FunDef;           ///< Function definitions
